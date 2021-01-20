@@ -64,6 +64,7 @@ const App = () => {
     setState((prevState) => ({
       ...prevState,
       contacts: [...prevState.contacts.filter(({ id }) => id !== contactId)],
+      filter: "",
     }));
   };
 
